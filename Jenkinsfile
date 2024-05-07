@@ -5,12 +5,15 @@ pipeline {
         stage('Check Background Color') {
             steps {
                 script {
-                    // Execute the bash script and capture the return status
-                    def result = sh(script: 'test.sh', returnStatus: true)
-                    
-                    // Check the result and handle the condition
-                    if (result != 0) {
-                        error("Build failed due to red background color in the HTML.")
+                    // Change to workspace directory where repo is checked out
+                    dir("${WORKSPACE}") {
+                        // Execute the bash script and capture the return status
+                        def result = sh(script: './test.sh', returnStatus: true)
+                        
+                        // Check the result and handle the condition
+                        if (result != 0) {
+                            error("Build failed due to red background color in the HTML.")
+                        }
                     }
                 }
             }
@@ -28,4 +31,3 @@ pipeline {
         }
     }
 }
-
