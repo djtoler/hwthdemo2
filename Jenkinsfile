@@ -6,7 +6,7 @@ pipeline {
             steps {
                 script {
                     // Execute the bash script and capture the return status
-                    def result = sh(script: 'bash check_background_color.sh', returnStatus: true)
+                    def result = sh(script: 'test.sh', returnStatus: true)
                     
                     // Check the result and handle the condition
                     if (result != 0) {
