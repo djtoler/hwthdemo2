@@ -13,7 +13,7 @@ pipeline {
             steps {
                 script {
                     // Assuming the HTML file is named index.html and located at the root of your repo
-                    def htmlFile = readFile 'index.html'
+                    def htmlFile = readFile 'hwth.html'
                     if (htmlFile.contains('background-color: red') || htmlFile.contains('background: red') ||
                         htmlFile.contains('background-color:#ff0000') || htmlFile.contains('background:#ff0000') ||
                         htmlFile.contains('rgb(255, 0, 0)')) {
