@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price Comparison App</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: purple;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            justify-content: flex-start;
+        }
+        img {
+            width: 50%; /* Adjust width to 50% of the viewport */
+            display: block;
+            margin: 0 auto; /* Center the image */
+        }
+        h1 {
+            text-align: center;
+            color: white;
+            margin: 20px 0;
+        }
+        table {
+            width: 90%;
+            max-width: 600px;
+            margin: 10px;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+            color: white; /* Set text color to white */
+        }
+        th {
+            background-color: gray;
+        }
+        .savings {
+            color: green;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://hwth-demo-3.s3.amazonaws.com/hwthapp.png" alt="Descriptive Image Text">
+    <h1>HWTH Demo for AWS & Digital Ocean</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>App Size</th>
+                <th>Price on Digital Ocean</th>
+                <th>Price on AWS</th>
+                <th>Savings</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Small Signup App</td>
+                <td>$72</td>
+                <td>$101</td>
+                <td><span class="savings">$29</span></td>
+            </tr>
+            <tr>
+                <td>Small Signup App (5 VMs)</td>
+                <td>$360</td>
+                <td>$505</td>
+                <td><span class="savings">$145</span></td>
+            </tr>
+            <tr>
+                <td>Medium AI App</td>
+                <td>$1,152</td>
+                <td>$3,240</td>
+                <td><span class="savings">$2,088</span></td>
+            </tr>
+            <tr>
+                <td>Medium AI App (5 VMs)</td>
+                <td>$5,760</td>
+                <td>$16,200</td>
+                <td><span class="savings">$10,440</span></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
