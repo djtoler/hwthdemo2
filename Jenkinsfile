@@ -5,7 +5,11 @@ pipeline {
         stage('Check Background Color') {
             steps {
                 script {
-                    if (sh script: 'bash check_background_color.sh', returnStatus: true) != 0 {
+                    // Execute the bash script and capture the return status
+                    def result = sh(script: 'bash check_background_color.sh', returnStatus: true)
+                    
+                    // Check the result and handle the condition
+                    if (result != 0) {
                         error("Build failed due to red background color in the HTML.")
                     }
                 }
@@ -24,3 +28,4 @@ pipeline {
         }
     }
 }
+
