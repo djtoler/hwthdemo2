@@ -2,9 +2,8 @@ pipeline {
     agent any
 
     stages {
-        stage('Checkout Code') {
+        stage('Pull Latest Code from Github') {
             steps {
-                // Checking out code from your GitHub repository
                 git(url: 'https://github.com/djtoler/hwthdemo2.git', branch: 'main')
             }
         }
