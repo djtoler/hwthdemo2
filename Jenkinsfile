@@ -8,7 +8,7 @@ pipeline {
             }
         }
 
-        stage('Check Background Color') {
+        stage('Test Background Color') {
             steps {
                 script {
                     // Assuming the HTML file is named index.html and located at the root of your repo
