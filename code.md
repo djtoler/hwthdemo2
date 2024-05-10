@@ -9,11 +9,11 @@
 
 ### INSTALL DOCKER
 
-> ##### CURL -O https://github.com/djtoler/Personal-Library-of-Automated-Installation-Scripts-for-UbuntuOS/blob/main/auto-docker_install.sh
+> ##### curl -O https://github.com/djtoler/Personal-Library-of-Automated-Installation-Scripts-for-UbuntuOS/blob/main/auto-docker_install.sh
 
 ### CREATE DOCKER FILE _(Build the recipe list for making a TV dinner)_
 
-> ##### CURL -O https://raw.githubusercontent.com/djtoler/Personal-Library-of-Automated-Installation-Scripts-for-UbuntuOS/main/Dockerfile
+> ##### curl -O https://raw.githubusercontent.com/djtoler/Personal-Library-of-Automated-Installation-Scripts-for-UbuntuOS/main/Dockerfile
 
 > ##### FROM nginx:alpine
 
@@ -72,8 +72,10 @@
 #### Add new virtual machine to the load balancer
 
 # Jenkins 
-##### (Growth through automation)
+##### (Growth through code deployment automation)
 
+> ##### curl -O https://github.com/djtoler/Personal-Library-of-Automated-Installation-Scripts-for-UbuntuOS/blob/main/auto-jenkins.sh
+> ##### [Setting up Jenkins pipeline](https://github.com/djtoler/Personal-Library-of-Automated-Installation-Scripts-for-UbuntuOS/blob/main/manual_jenkins_multi_branch.txt)
 > ##### Push new code
 > ##### http://18.215.144.104:8080/job/hwthdemo/job/main/
 
