@@ -32,7 +32,7 @@
 ##### docker run -d -p 80:80 djtoler/dk8000:latest
 
 
-## Docker on Digital Ocean
+# Docker on Digital Ocean
 
 #### CREATE KEY
     ssh-keygen -t rsa -b 4096 -C "dk2" -f ~/.ssh/dk2
@@ -60,7 +60,7 @@
 
 
 
-## Load Balancing
+# Load Balancing
 
 #### CREATE NEW VIRTUAL MACHNIE IN DIGITAL OCEAN
 ##### doctl compute droplet create newdesign --size s-1vcpu-1gb --image docker-20-04 --region nyc1 --ssh-keys 41966894 --tag-names hwthdemo --wait
@@ -72,11 +72,11 @@
 
 #### Add new virtual machine to the load balancer
 
-## Jenkins
+# Jenkins
 ##### Push new code
 ##### http://18.215.144.104:8080/job/hwthdemo/job/main/
 
-## Kubernetes
+# Kubernetes
 
 ##### curl -O https://raw.githubusercontent.com/djtoler/Personal-Library-of-Automated-Installation-Scripts-for-UbuntuOS/main/demo.yaml
 
