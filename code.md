@@ -4,7 +4,8 @@
 
 ##### https://github.com/djtoler/hwthdemo2
 
-# Docker on AWS
+# Docker on AWS 
+##### (Containerization)
 
 ### INSTALL DOCKER
 
@@ -30,7 +31,8 @@
 ##### docker run -d -p 80:80 djtoler/dk8000:latest
 
 
-# Docker on Digital Ocean
+# Docker on Digital Ocean 
+##### (Saving Money by cotainerizing)
 
 #### _CREATE KEY_
 ##### ssh-keygen -t rsa -b 4096 -C "dk2" -f ~/.ssh/dk2
@@ -57,6 +59,7 @@
 > ##### docker run -d -p 80:80 djtoler/dk8000:latest
 
 # Load Balancing
+##### (Growth through load balancers plus automation)
 
 #### _CREATE NEW VIRTUAL MACHNIE IN DIGITAL OCEAN_
 ##### doctl compute droplet create newdesign --size s-1vcpu-1gb --image docker-20-04 --region nyc1 --ssh-keys 41966894 --tag-names hwthdemo --wait
@@ -68,13 +71,15 @@
 
 #### Add new virtual machine to the load balancer
 
-# Jenkins
-##### Push new code
-##### http://18.215.144.104:8080/job/hwthdemo/job/main/
+# Jenkins 
+##### (Growth through automation)
+
+> ##### Push new code
+> ##### http://18.215.144.104:8080/job/hwthdemo/job/main/
 
 # Kubernetes
-
-##### curl -O https://raw.githubusercontent.com/djtoler/Personal-Library-of-Automated-Installation-Scripts-for-UbuntuOS/main/demo.yaml
+##### (Scaling with container orchestration)
+> ##### curl -O https://raw.githubusercontent.com/djtoler/Personal-Library-of-Automated-Installation-Scripts-for-UbuntuOS/main/demo.yaml
 
 > ##### _name: demo-app_
 > ##### _replicas: 2_
