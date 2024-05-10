@@ -6,6 +6,7 @@
 
 # Docker on AWS 
 ##### (Containerization)
+##### [Show AWS pricing]
 
 ### INSTALL DOCKER
 
@@ -33,6 +34,7 @@
 
 # Docker on Digital Ocean 
 ##### (Saving Money by containerizing)
+##### [Show AWS pricing vs Digital Ocean pricing]
 
 #### _CREATE KEY_
 > ##### ssh-keygen -t rsa -b 4096 -C "dk2" -f ~/.ssh/dk2
@@ -60,6 +62,7 @@
 
 # Load Balancing
 ##### (Growth through load balancers plus automation)
+##### [Create a new VM, run container and load balancer to show split testing 2 different design versions]
 
 #### _CREATE NEW VIRTUAL MACHNIE IN DIGITAL OCEAN_
 > ##### doctl compute droplet create newdesign --size s-1vcpu-1gb --image docker-20-04 --region nyc1 --ssh-keys 41966894 --tag-names hwthdemo --wait
@@ -73,6 +76,7 @@
 
 # Jenkins 
 ##### (Growth through code deployment automation)
+##### [Show a Jenkins building stoping all red color backgrounds because a check in the testing stage]
 
 > ##### curl -O https://github.com/djtoler/Personal-Library-of-Automated-Installation-Scripts-for-UbuntuOS/blob/main/auto-jenkins.sh
 > ##### [Setting up Jenkins pipeline](https://github.com/djtoler/Personal-Library-of-Automated-Installation-Scripts-for-UbuntuOS/blob/main/manual_jenkins_multi_branch.txt)
@@ -81,6 +85,7 @@
 
 # Kubernetes
 ##### (Scaling with container orchestration)
+##### [Showing auto-scaling through manual vm termination and load testing with JMeter]
 > ##### curl -O https://raw.githubusercontent.com/djtoler/Personal-Library-of-Automated-Installation-Scripts-for-UbuntuOS/main/demo.yaml
 
 > ##### _name: demo-app_
@@ -88,6 +93,8 @@
 > ##### _image: djtoler/hwthdemoapp2:latest_
 
 > ##### kubectl apply -f demo.yaml
+
+>#### _JMeter_ 
 
 > #####   jmeter -n -t /Users/dwaynetoler/digiital-ocean-demo/jm/t2.xml -l /Users/dwaynetoler/digiital-ocean-demo/jm/results.jtl
 
