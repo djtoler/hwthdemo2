@@ -1,3 +1,5 @@
+##### _[Live Coding Demo Notes](https://github.com/djtoler/Personal-Library-of-Automated-Installation-Scripts-for-UbuntuOS/blob/main/templates/lcnotes.txt)_
+
 # GitHub
 
 #### _Start off by looking at our code on our GitHub repo._ 
